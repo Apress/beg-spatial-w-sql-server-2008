@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <title>SQL Server 2008 Geospatial Data</title>
+  <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"
+          type="text/javascript"></script>
+  <script src="JScript.js" type="text/javascript"></script>
+</head>
+<body onload="initialiseMap();">
+  <h1>Virtual Earth Sql Server 2008 Spatial Data Generator</h1>
+  <p>This page allows you to graphically define spatial objects by clicking on a Virtual Earth control, and then generate SQL statements which will insert those objects into a SQL Server 2008 geography column.</p>
+  <form action="">
+
+  <h2>1.) Select the type of geometry to create</h2>
+    <input id="DrawPoint" title="Mark a point" onclick="createGeometry(VEShapeType.Pushpin)" type="button" value="Point" /> 
+    <input id="DrawLineString" title="Draw a line" onclick="createGeometry(VEShapeType.Polyline)" type="button" value="LineString" /> 
+    <input id="DrawPolygon" title="Draw a polygon." onclick="createGeometry(VEShapeType.Polygon)" type="button" value="Polygon" />
+
+  <h2>2.) Click on the map to define point(s) of this geometry</h2>
+  <div id="myMap" style="position: relative;">
+    <!-- The Virtual Earth Map control will be automatically inserted here -->
+  </div>
+  <label for="Latitude">Latitude</label><input id="Latitude" />
+  <label for="Longitude">Longitude</label><input id="Longitude" />
+  
+  <h2>3.) Well-Known Text</h2>
+  <div id="WKTOutput">The WKT representation of the geometry will appear here.</div>
+  <p>You can use this WKT representation in conjunction with the STGeomFromText() method.</p>
+  
+  <hr />
+  <p>
+    <input id="Reset" onclick="StartAgain();" type="button" value="Start Again" />
+  </p>
+  </form>
+</body>
+</html> 

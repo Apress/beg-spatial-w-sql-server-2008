@@ -1,0 +1,12 @@
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.Resources.resources
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\bin\Release\Geocoder.dll.config
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\bin\Release\Geocoder.dll
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\bin\Release\Geocoder.XmlSerializers.dll
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\bin\Release\Geocoder.pdb
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\bin\Release\Geocoder.xml
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.dll
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.xml
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.pdb
+C:\Documents and Settings\Alastair\Local Settings\Application Data\Temporary Projects\Geocoder\obj\Release\Geocoder.XmlSerializers.dll

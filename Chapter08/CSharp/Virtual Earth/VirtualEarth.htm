@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Virtual Earth GeoRSS Overlay</title>
+  <script src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.2"
+          type="text/javascript"></script>
+  <script type="text/javascript" language="javascript">
+    function initialize () {
+
+      // Insert a new map object into the page
+      map = new VEMap('divMap');
+
+      // Specify the map options
+      map.LoadMap(new VELatLong(52, -0.8), 6 ,'r' ,false);
+
+      // Specify a new shape layer on the map
+      var geoRSSLayer = new VEShapeLayer();
+      var url = "./Handler.ashx";
+      var geoRSSLayerSpec = new VEShapeSourceSpecification(VEDataType.GeoRSS, url,
+        geoRSSLayer);
+      map.ImportShapeLayerData(geoRSSLayerSpec, null, false);
+    }
+  </script>
+</head>
+<body onload=" initialize ();">
+  <div id="divMap" style="position: relative; width: 640px; height: 480px;">
+  </div>
+</body>
+</html>
